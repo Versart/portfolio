@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
 :root {
     --black: #1b1f23;
     --white: #bbbcbe;
+    --green: #80ea6e;
+    --outrogreen: #347d28;
 }
 * {
     margin: 0;
@@ -20,11 +24,22 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     padding: 2rem 0 0 3rem;
+    font-family: "Do Hyeon", sans-serif;
 }
+
+.menu_navegacao li a {
+    text-decoration: none;
+    color: var(--outrogreen);
+    gap: 2px;
+    display: flex;
+}
+
 .apresentacao {
     display: flex;
-    justify-content: space-around;
-    margin: 10rem 0;
+    justify-content: center;
+    gap: 13.125rem;
+    /*margin: 10rem 9.625rem;*/
+    margin: 10rem auto;
 }
 
 .apresentacao_conteudo {
@@ -35,9 +50,21 @@ body {
 
 .apresentacao_conteudo_titulo {
     font-size: 2.25rem;
+    font-weight: 400;
+    font-family: "Do Hyeon", sans-serif;
+}
+.apresentacao_conteudo_titulo_sobrenome {
+    color: var(--outrogreen);
+}
+.apresentacao_conteudo_texto {
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-family: "Lato", sans-serif;
+    line-height: 36px;
 }
 .foto_wesley {
     height: 30rem;
+    border-radius: 8px;
 }
 
 .links_pessoais {
@@ -47,8 +74,14 @@ body {
     gap: 1.563rem;
 }
 
+.links_pessoais p {
+    font-family: "Do Hyeon", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
 .links_pessoais a {
-    border: 1px solid var(--white);
+    border: 1px solid var(--outrogreen);
     width: 378px;
     height: 68px;
     text-align: center;
@@ -56,4 +89,13 @@ body {
     font-weight: 600;
     font-size: 1.5rem;
     padding: 1rem 0;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+}
+
+footer p {
+    text-align: center;
+    font-family: "Lato", sans-serif;
+    padding: 1.563rem 0;
 }
