@@ -2,6 +2,8 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Portfólio Wesley Versart</title>
     </head>
@@ -13,14 +15,23 @@
                     <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
                     <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
                 </ul>
+                <div class="icone_menu_mobile">
+                    <button onclick="mostrarMenu()"><img src="assets/images/menu_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"></button>
+                </div>
             </nav>
+            <div class="menu_mobile">
+                <ul class="menu_navegacao">
+                    <li><a href="index.html"><img src="assets/images/home_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"> Home</a></li>
+                    <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
+                    <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
+                </ul>
+            </div>
         </header>
         <main class="apresentacao">
             <section class="apresentacao_conteudo">
                 <h1 class="apresentacao_conteudo_titulo">Wesley <span class="apresentacao_conteudo_titulo_sobrenome">Versart</span></h1>
                 <p class="apresentacao_conteudo_texto">Olá, meu nome é Wesley, sou desenvolvedor Back-end e estudante de Sistemas
-                    de Informação no IFMA. Tenho experiências no desenvolvimento de APIs, testes de software e desenvolvimento
-                de páginas web.</p>
+                    de Informação no IFMA. Tenho experiências no desenvolvimento de APIs, testes de software e desenvolvimento de páginas web.</p>
                 <div class="links_pessoais">
                     <p>Acesse minhas redes:</p>
                     <a href="https://github.com/Versart" target="_blank">Github</a>
@@ -32,5 +43,6 @@
         <footer>
             <p>Desenvolvido por Wesley Versart</p>
         </footer>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>
