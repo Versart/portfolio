@@ -3,8 +3,7 @@
 :root {
     --black: #1b1f23;
     --white: #bbbcbe;
-    --green: #80ea6e;
-    --outrogreen: #347d28;
+    --green: #347d28;
 }
 * {
     margin: 0;
@@ -27,12 +26,28 @@ body {
     font-family: "Do Hyeon", sans-serif;
 }
 
+.lista_habilidades {
+    list-style: none;
+    justify-content: center;
+    gap: 64px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 2rem 0 0 3rem;
+    font-family: "Lato", sans-serif;
+    padding: 0;
+}
+
 .menu_navegacao li a {
     text-decoration: none;
-    color: var(--outrogreen);
+    color: var(--green);
     gap: 2px;
     display: flex;
 }
+
+a:hover {
+    transform: scale(1.02);
+}
+
 
 .icone_menu_mobile {
     display: none;
@@ -56,14 +71,20 @@ body {
     gap: 2rem;
     width: 50%;
 }
+.apresentacao_projetos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
 
 .apresentacao_conteudo_titulo {
     font-size: 2.25rem;
     font-weight: 400;
     font-family: "Do Hyeon", sans-serif;
 }
-.apresentacao_conteudo_titulo_sobrenome {
-    color: var(--outrogreen);
+.apresentacao_conteudo_titulo_contraste {
+    color: var(--green);
 }
 .apresentacao_conteudo_texto {
     font-size: 1.5rem;
@@ -71,10 +92,14 @@ body {
     font-family: "Lato", sans-serif;
     line-height: 36px;
 }
-.foto_wesley {
+.foto {
     height: 30rem;
     border-radius: 8px;
 }
+.foto_habilidades {
+    width: 27.3rem;
+}
+
 
 .links_pessoais {
     display: flex;
@@ -91,7 +116,7 @@ body {
 }
 
 .links_pessoais a {
-    border: 1px solid var(--outrogreen);
+    border: 1px solid var(--green);
     width: 378px;
     height: 68px;
     text-align: center;
@@ -102,8 +127,71 @@ body {
     text-decoration: none;
     color: var(--white);
     font-family: "Lato", sans-serif;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
+.certificado {
+    border: 1px solid var(--green);
+    width: 378px;
+    height: 68px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.projetos {
+    display: flex;
+    gap: 20px;
+    font-family: "Do Hyeon", sans-serif;
+    flex: 1;
+}
+.projeto {
+    border: 1px solid var(--green);
+    width: 300px;
+    height: 243px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 10px;
+}
+.projeto:hover {
+    transform: scale(1.02);
+}
+.projeto a {
+    border: 1px solid var(--green);
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    text-decoration: none;
+    color: var(--white);
+    font-family: "Lato", sans-serif;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+footer {
+    border-top: 3px solid var(--green);
+}
 footer p {
     text-align: center;
     font-family: "Lato", sans-serif;
@@ -116,6 +204,17 @@ footer p {
        width: 100%;
        gap: 12px;
     }
+    .foto_habilidades {
+        width: 30rem;
+    }
+    /**/
+    .apresentacao_projetos {
+        text-align: center;
+    }
+    .projetos {
+       flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media (max-width: 800px) {
@@ -127,6 +226,10 @@ footer p {
         flex-direction: row-reverse;
         padding: 2rem 0 0 3rem;
 
+    }
+    .menu_navegacao {
+        /*padding: 0;*/
+        gap: 0;
     }
     .menu_navegacao li {
         display: none;
@@ -143,6 +246,7 @@ footer p {
     .menu_mobile ul {
         display: flex;
         flex-direction: column;
+        align-items: center;
         text-align: center;
         padding-bottom: 1rem;
     }
@@ -159,4 +263,15 @@ footer p {
     .mostrar_menu {
         display: block;
     }
+    .apresentacao_projetos {
+
+    }
 }
+
+@media (max-width: 500px) {
+    .foto_habilidades {
+        width: 15rem;
+    }
+
+}
+

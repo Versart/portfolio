@@ -2,24 +2,57 @@
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Projetos Wesley Versart</title>
     </head>
     <body>
         <header>
             <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Habilidades</a></li>
-                    <li><a>Projetos</a></li>
+                <ul class="menu_navegacao">
+                    <li><a href="index.html"><img src="assets/images/home_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"> Home</a></li>
+                    <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
+                    <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
                 </ul>
+                <div class="icone_menu_mobile">
+                    <button onclick="mostrarMenu()"><img src="assets/images/menu_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"></button>
+                </div>
             </nav>
+            <div class="menu_mobile">
+                <ul class="menu_navegacao">
+                    <li><a href="index.html"><img src="assets/images/home_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"> Home</a></li>
+                    <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
+                    <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
+                </ul>
+            </div>
         </header>
-        <main>
-            <section>
-                <h1>Meus projetos</h1>
-                <p>Aqui uns projetos que já realizei</p>
+        <main class="apresentacao">
+            <section class="apresentacao_projetos">
+                <h1 class="apresentacao_conteudo_titulo">Meus <span class="apresentacao_conteudo_titulo_contraste">projetos</span></h1>
+                <p class="apresentacao_conteudo_texto">Aqui alguns projetos que já realizei:</p>
+                <div class="projetos">
+                    <div class="projeto">
+                        <h3>API de games</h3>
+                        <p>Uma API que gerencia companhias de games</p>
+                        <a href="https://github.com/Versart/apigames" target="_blank">Acessar</a>
+                    </div>
+                    <div class="projeto">
+                        <h3>API de Fórum</h3>
+                        <p>Uma API que gerencia um fórum de uma escola de programação</p>
+                        <a href="https://github.com/Versart/forum-alura" target="_blank">Acessar</a>
+                    </div>
+                    <div class="projeto">
+                        <h3>Site de Jogos</h3>
+                        <p>Um site onde você pode comprar jogos</p>
+                        <a href="https://versart.github.io/Site-de-Jogos/" target="_blank">Acessar</a>
+                    </div>
+                </div>
             </section>
         </main>
+        <footer>
+            <p>Desenvolvido por Wesley Versart</p>
+        </footer>
+        <script src="assets/js/script.js"></script>
     </body>
 </html>

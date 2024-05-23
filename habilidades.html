@@ -2,27 +2,52 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="assets/css/style.css">
         <title>Habilidades Wesley Versart</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a>Home</a></li>
-                    <li><a>Habilidades</a></li>
-                    <li><a>Projetos</a></li>
+    <header>
+        <nav>
+            <ul class="menu_navegacao">
+                <li><a href="index.html"><img src="assets/images/home_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"> Home</a></li>
+                <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
+                <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
+            </ul>
+            <div class="icone_menu_mobile">
+                <button onclick="mostrarMenu()"><img src="assets/images/menu_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"></button>
+            </div>
+        </nav>
+        <div class="menu_mobile">
+            <ul class="menu_navegacao">
+                <li><a href="index.html"><img src="assets/images/home_24dp_FILL0_wght400_GRAD0_opsz24%20(1).svg"> Home</a></li>
+                <li><a href="habilidades.html"><img src="assets/images/stacks_24dp_FILL0_wght400_GRAD0_opsz24.svg">Habilidades</a></li>
+                <li><a href="projetos.html"><img src="assets/images/computer_24dp_FILL0_wght400_GRAD0_opsz24.svg">Projetos</a></li>
+            </ul>
+        </div>
+    </header>
+        <main class="apresentacao">
+            <section class="apresentacao_conteudo">
+                <h1 class="apresentacao_conteudo_titulo">Minhas <span class="apresentacao_conteudo_titulo_contraste">habilidades</span></h1>
+                <ul class="lista_habilidades">
+                    <li>Java, Spring Boot</li>
+                    <li>JUnit, Mockito</li>
+                    <li>MySQL, PostgreSQL</li>
+                    <li>HTML, CSS, Javascript</li>
+                    <li>Git</li>
+                    <li>Docker</li>
                 </ul>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h1>Minhas habilidades</h1>
-                <p>Tenho experiência em Java enho experiência
-                    em Javaenho experiência em Javaenho experiência em Javaenho experiência em
-                    Javaenho experiência em Java</p>
-                <a href="" target="_blank">Certificados</a>
+                <div class="links_pessoais">
+                    <a href="https://www.linkedin.com/in/wesley-versart-dev/details/certifications/" target="_blank" class="certificado">
+                        <img src="assets/images/recursos-alternativos.png">Certificados</a>
+                </div>
             </section>
+            <img src="assets/images/istockphoto-1131109259-612x612.jpg" class="foto_habilidades" >
         </main>
+        <footer>
+            <p>Desenvolvido por Wesley Versart</p>
+        </footer>
+    <script src="assets/js/script.js"></script>
     </body>
 </html>
