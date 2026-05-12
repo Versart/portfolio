@@ -13,7 +13,9 @@
 body {
     background-color: var(--black);
     color: var(--white);
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 .menu_navegacao {
     display: flex;
