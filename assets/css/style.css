@@ -16,7 +16,10 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    flex: 1;
+}
+
+main {
+     flex: 1;
 }
 .menu_navegacao {
     display: flex;
